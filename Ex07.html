@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FORMULÁRIO</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Exemplo de formulário</h1>
+        <form action="cadastro.php" method="get" acomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+
+                <optgroup label="Região Sudeste">
+                    <option value="Mg">Minas gerais</option>
+                    <option value="Rj">Rio de janeiro</option>
+                    <option value="Sp">São paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nodeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio grande do norte</option>
+                </optgroup>
+            </select>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="stprof">
+            <datalist id="stprof">
+            <option value="ADM">Admistrador</option>
+            <option value="CONT">Contabilista</option>
+            <option value="DEV">Desenvolvedor</option>
+            <option value="Iprov">Professor</option>
+            </datalist>
+        </p>
+        </form>
+        <label for="imgs">Mensagem:</label>
+        <textarea name="mgs" id="imgs" cols="30" rows="10" placeholder="Sua mensagem aqui..."></textarea>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
